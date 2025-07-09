@@ -14,6 +14,11 @@ public class QuickStats {
         }
     }
     public  static void main(String[] args){
+        if (args.length == 0){
+            System.out.println("There are no numbers in the list");
+            return;
+        }
+
         System.out.println(args.length);
         String[] myArgs = args;
         System.out.println(Arrays.toString(myArgs));
